@@ -25,4 +25,14 @@ public class CalculadoraService {
         return "o resultado da divisão é " + resultado;
     }
 
+    public String raizQuadrada(double num) {
+        double resultado = Math.sqrt(num);
+        return "a raiz quadrada de " + num + " é " + resultado;
+    }
+
+    public String raizCubica(double num) {
+        double resultado = Math.cbrt(num);
+        return "a raiz cúbica de " + num + " é " + resultado;
+    }
+
 }

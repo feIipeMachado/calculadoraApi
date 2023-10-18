@@ -44,4 +44,16 @@ public class CalculadoraController {
         String retornarDivisao = service.divisao(numA, numB);
         return ResponseEntity.ok(retornarDivisao);
     }
+
+    @GetMapping("raizQuadrada/{num}")
+    public ResponseEntity<String> calcularRaizQuadrada(@PathVariable("num") double num) {
+        String retornarRaizQuadrada = service.raizQuadrada(num);
+        return ResponseEntity.ok(retornarRaizQuadrada);
+    }
+
+    @GetMapping("raizCubica/{num}")
+    public ResponseEntity<String> calcularRaizCubica(@PathVariable("num") double num) {
+        String retornarRaizCubica = service.raizCubica(num);
+        return ResponseEntity.ok(retornarRaizCubica);
+    }
 }
