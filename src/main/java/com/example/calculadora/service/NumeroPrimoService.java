@@ -7,9 +7,9 @@ public class NumeroPrimoService {
 
     public String verificarSePrimo(double numero) {
         if (numero == 2 || numero % 2 != 0) {
-            return "numero " + numero + " é primo";
+            return "número " + numero + " é primo";
         } else {
-            return "numero " + numero + " não é primo";
+            return "número " + numero + " não é primo";
         }
     }
 }
